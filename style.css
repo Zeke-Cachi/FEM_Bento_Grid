@@ -7,7 +7,8 @@
 
 :root {
   --page-padding-x: 9.5rem;
-  --page-padding-y: 5rem;
+  --page-padding-y-top: 5rem;
+  --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
   --gap: 2rem;
 }
@@ -18,7 +19,8 @@
 }
 
 main {
-  padding: var(--page-padding-y) var(--page-padding-x);
+  padding: var(--page-padding-y-top) var(--page-padding-x)
+    var(--page-padding-y-bottom);
   width: 100vw;
   height: 100vh;
 }
