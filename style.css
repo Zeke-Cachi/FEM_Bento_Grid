@@ -11,6 +11,16 @@
   --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
   --gap: 2rem;
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+  --font-size: 1.125rem;
+  --font-family: "DM Sans", sans-serif;
+  --font-400: 400;
+  --font-500: 500;
 }
 
 /* UTILITY CLASSES */
@@ -52,11 +62,11 @@ section {
 }
 
 .main-two-elements > div:nth-child(1) {
-  background: lightblue;
+  background: var(--yellow-100);
 }
 
 .main-two-elements > div:nth-child(2) {
-  background: lightgrey;
+  background: var(--yellow-500);
 }
 
 .main-seven-elements {
@@ -75,7 +85,8 @@ aside,
 .main-desktop-banner,
 .two-sub-banners-below-main,
 .maintain-schedule,
-.manage-multiple-accounts {
+.manage-multiple-accounts,
+.fifty-six-percent {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -90,7 +101,18 @@ aside,
 
 .bottom-part {
   grid-row: 10/ 14;
-  background: yellow;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fifty-six-percent {
+  background: var(--white);
+}
+
+.grow-followers {
+  background: var(--purple-500);
+  grid-column: span 2;
 }
 
 .part-with-three-elements {
@@ -102,11 +124,11 @@ aside,
 }
 
 aside {
-  background: orange;
+  background: var(--purple-100);
 }
 
 .main-desktop-banner {
-  background: blue;
+  background: var(--purple-500);
 }
 
 .two-sub-banners-below-main {
@@ -115,9 +137,9 @@ aside {
 }
 
 .maintain-schedule {
-  background: violet;
+  background: var(--yellow-500);
 }
 
 .manage-multiple-accounts {
-  background: lightgoldenrodyellow;
+  background: var(--white);
 }
