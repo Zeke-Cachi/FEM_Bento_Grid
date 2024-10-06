@@ -7,7 +7,7 @@
 }
 
 :root {
-  --page-padding-x: 10.5rem;
+  --page-padding-x: 12rem;
   --page-padding-y-top: 5rem;
   --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
@@ -28,7 +28,7 @@
 .container-borders {
   border-radius: var(--main-elements-border);
 }
-
+/* ----------------------------------------------------------------------------------------------------- */
 main {
   padding: var(--page-padding-y-top) var(--page-padding-x)
     var(--page-padding-y-bottom);
@@ -133,6 +133,25 @@ aside {
   color: white;
   display: grid;
   place-items: center;
+  padding: var(--gap);
+  gap: 1rem;
+}
+
+.main-desktop-banner > figure {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.main-desktop-banner > figure > img {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.ten-x {
+  color: var(--yellow-500);
 }
 
 .two-sub-banners-below-main {
@@ -146,4 +165,11 @@ aside {
 
 .manage-multiple-accounts {
   background: var(--white);
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: var(--font-500);
+  text-align: center;
+  line-height: 3rem;
 }
