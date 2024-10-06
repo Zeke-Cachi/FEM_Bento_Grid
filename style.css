@@ -71,7 +71,11 @@ section {
 .top-part,
 .bottom-part,
 .part-with-three-elements,
-aside {
+aside,
+.main-desktop-banner,
+.two-sub-banners-below-main,
+.maintain-schedule,
+.manage-multiple-accounts {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -90,10 +94,30 @@ aside {
 }
 
 .part-with-three-elements {
-  background: brown;
   grid-column: span 2;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 5fr 4fr;
+  gap: var(--gap);
 }
 
 aside {
   background: orange;
+}
+
+.main-desktop-banner {
+  background: blue;
+}
+
+.two-sub-banners-below-main {
+  display: flex;
+  gap: var(--gap);
+}
+
+.maintain-schedule {
+  background: violet;
+}
+
+.manage-multiple-accounts {
+  background: lightgoldenrodyellow;
 }
