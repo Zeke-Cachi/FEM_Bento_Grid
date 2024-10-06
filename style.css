@@ -6,7 +6,7 @@
 }
 
 :root {
-  --page-padding-x: 9.5rem;
+  --page-padding-x: 10.5rem;
   --page-padding-y-top: 5rem;
   --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
@@ -61,5 +61,39 @@ section {
 
 .main-seven-elements {
   flex: 1;
-  background: lightcoral;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(13, 1fr);
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.top-part,
+.bottom-part,
+.part-with-three-elements,
+aside {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-part {
+  grid-row: 1 / 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.bottom-part {
+  grid-row: 10/ 14;
+  background: yellow;
+}
+
+.part-with-three-elements {
+  background: brown;
+  grid-column: span 2;
+}
+
+aside {
+  background: orange;
 }
