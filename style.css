@@ -34,6 +34,7 @@ main {
     var(--page-padding-y-bottom);
   width: 100vw;
   height: 100vh;
+  background: hsl(0, 0%, 97%);
 }
 
 section {
@@ -148,11 +149,44 @@ aside,
 
 .fifty-six-percent {
   background: var(--white);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.fifty-six-percent > h3 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.fifty-six-percent > p {
+  font-weight: var(--font-500);
+}
+
+.fifty-six-percent > img {
+  width: 75%;
 }
 
 .grow-followers {
   background: var(--purple-500);
   grid-column: span 2;
+  display: flex;
+  padding: 1.2rem 0.8rem 1.2rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.grow-followers > h3 {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: var(--font-500);
+  line-height: 2rem;
+}
+
+.grow-followers > img {
+  width: 41%;
 }
 
 .part-with-three-elements {
@@ -188,6 +222,8 @@ aside > img {
 
 aside > p {
   font-weight: var(--font-500);
+  padding-right: 0.5rem;
+  line-height: 1.2rem;
 }
 
 .main-desktop-banner {
@@ -223,10 +259,47 @@ aside > p {
 
 .maintain-schedule {
   background: var(--yellow-500);
+  display: grid;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem;
+  position: relative;
+}
+
+.maintain-schedule > img {
+  width: 80%;
+  position: absolute;
+  top: 60%;
+  right: 50%;
+  translate: 50% 0;
+}
+
+.maintain-schedule > h3 {
+  font-size: 2rem;
+  line-height: 1.4rem;
+  font-weight: var(--font-500);
+  letter-spacing: -0.1rem;
 }
 
 .manage-multiple-accounts {
   background: var(--white);
+  position: relative;
+  padding: 1.5rem;
+  display: grid;
+  place-items: end center;
+}
+
+.manage-multiple-accounts > img {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 120%;
+}
+
+.manage-multiple-accounts > h3 {
+  font-size: 1.9rem;
+  line-height: 1.4rem;
+  font-weight: var(--font-500);
+  letter-spacing: -0.1rem;
 }
 
 h1 {
