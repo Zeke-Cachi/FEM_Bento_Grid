@@ -90,6 +90,23 @@ section {
 
 .main-two-elements > div:nth-child(2) {
   background: var(--yellow-500);
+  padding: 1rem;
+  position: relative;
+}
+
+.main-two-elements > div:nth-child(2) > h2 {
+  font-size: 2.3rem;
+  line-height: 2rem;
+  letter-spacing: -0.15rem;
+  font-weight: var(--font-500);
+  padding-right: 2rem;
+}
+
+.main-two-elements > div:nth-child(2) > img {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.1rem;
+  width: 85%;
 }
 
 .main-seven-elements {
@@ -148,6 +165,29 @@ aside,
 
 aside {
   background: var(--purple-100);
+  padding: 2.5rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+aside > h3 {
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  font-weight: var(--font-500);
+  letter-spacing: -0.1rem;
+}
+
+aside > img {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  height: 50%;
+}
+
+aside > p {
+  font-weight: var(--font-500);
 }
 
 .main-desktop-banner {
