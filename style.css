@@ -9,9 +9,12 @@
 :root {
   --page-padding-x: 12rem;
   --page-padding-y-top: 5rem;
+  --page-padding-x-mobile: 1.5rem;
+  --page-padding-y-mobile: 2rem;
   --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
   --gap: 2rem;
+  --gap-mobile: 1rem;
   --purple-100: hsl(254, 88%, 90%);
   --purple-500: hsl(256, 67%, 59%);
   --yellow-100: hsl(31, 66%, 93%);
@@ -28,7 +31,7 @@
 .container-borders {
   border-radius: var(--main-elements-border);
 }
-/* ----------------------------------------------------------------------------------------------------- */
+/* ---------------------------------- DESTKOP ------------------------------------------------------------------- */
 main {
   padding: var(--page-padding-y-top) var(--page-padding-x)
     var(--page-padding-y-bottom);
@@ -307,4 +310,31 @@ h1 {
   font-weight: var(--font-500);
   text-align: center;
   line-height: 3rem;
+}
+
+/* ---------------------------------- MOBILE ------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  /* FIRST WE POSITION EVERYTHING FROM TOP TO BOTTOM */
+
+  main {
+    padding: var(--page-padding-x-mobile) var(--page-padding-y-mobile);
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .two-sub-banners-below-main {
+    flex-direction: column;
+  }
+
+  .top-part {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-part {
+    gap: var(--gap);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
