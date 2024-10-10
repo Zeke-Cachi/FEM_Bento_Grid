@@ -9,7 +9,7 @@
 :root {
   --page-padding-x: 12rem;
   --page-padding-y-top: 5rem;
-  --page-padding-x-mobile: 1.5rem;
+  --page-padding-x-mobile: 1rem;
   --page-padding-y-mobile: 2rem;
   --page-padding-y-bottom: 4rem;
   --main-elements-border: 8px;
@@ -318,23 +318,179 @@ h1 {
   /* FIRST WE POSITION EVERYTHING FROM TOP TO BOTTOM */
 
   main {
-    padding: var(--page-padding-x-mobile) var(--page-padding-y-mobile);
+    padding: var(--page-padding-y-mobile) var(--page-padding-x-mobile);
   }
 
   section {
     flex-direction: column;
   }
 
+  .main-seven-elements,
+  .main-two-elements {
+    height: auto;
+    width: auto;
+  }
+
+  .main-seven-elements {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+
+  .main-two-elements {
+    gap: var(--gap);
+    height: auto;
+  }
+
+  .main-two-elements > div:nth-child(1) {
+    height: 12rem;
+  }
+
+  .main-two-elements > div:nth-child(1) > h2 {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+  }
+
+  .main-two-elements > div:nth-child(1) > img {
+    width: 60%;
+    place-self: start;
+  }
+
+  .main-two-elements > div:nth-child(2) {
+    height: 19rem;
+  }
+
+  .main-two-elements > div:nth-child(2) > h2 {
+    font-size: 2rem;
+  }
+
+  .main-two-elements > div:nth-child(2) > img {
+    bottom: 1rem;
+    left: 1.1rem;
+    width: 50%;
+  }
+
   .two-sub-banners-below-main {
     flex-direction: column;
   }
 
-  .top-part {
+  .bottom-part {
+    gap: var(--gap);
     grid-template-columns: 1fr;
   }
 
+  .top-part {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .part-with-three-elements {
+    display: block;
+  }
+
+  .main-desktop-banner {
+    height: 19rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .main-desktop-banner > figure figcaption {
+    font-size: 1.1rem;
+  }
+
+  .manage-multiple-accounts {
+    height: 11.5rem;
+  }
+
+  .manage-multiple-accounts > img {
+    width: 100%;
+  }
+
+  .manage-multiple-accounts > h3 {
+    font-size: 1.5rem;
+  }
+
+  .maintain-schedule {
+    height: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  .maintain-schedule > img {
+    width: 50%;
+    top: 50%;
+    right: 69%;
+  }
+
+  aside {
+    height: 25rem;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  aside > h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  aside > p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  aside > img {
+    top: 45%;
+  }
+
   .bottom-part {
-    gap: var(--gap);
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .grow-followers {
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    padding: 1.2rem 0.8rem 1.2rem 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .grow-followers > h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .grow-followers > img {
+    width: 60%;
+  }
+
+  .fifty-six-percent {
+    padding: 1.5rem;
+    height: 12rem;
+    margin: 1rem 0;
+  }
+
+  .fifty-six-percent > h3 {
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .fifty-six-percent > p {
+    font-weight: var(--font-500);
+  }
+
+  .fifty-six-percent > img {
+    width: 55%;
   }
 }
